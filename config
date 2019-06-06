@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $mod_alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -106,16 +107,16 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
+bindsym $mod_alt+1 workspace $ws1
+bindsym $mod_alt+2 workspace $ws2
+bindsym $mod_alt+3 workspace $ws3
+bindsym $mod_alt+4 workspace $ws4
+bindsym $mod_alt+5 workspace $ws5
+bindsym $mod_alt+6 workspace $ws6
+bindsym $mod_alt+7 workspace $ws7
+bindsym $mod_alt+8 workspace $ws8
+bindsym $mod_alt+9 workspace $ws9
+bindsym $mod_alt+0 workspace $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
