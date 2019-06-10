@@ -36,7 +36,7 @@ bindsym $mod+Return exec konsole
 # kill focused window
 bindsym $mod+Shift+q kill
 # take a full screenshot 
-bindsym $mod_alt+f exec flameshot full  -p ~/Pictures/screenshots
+bindsym $mod_alt+c exec flameshot full  -p ~/Pictures/screenshots
 # exec flameshot gui
 bindsym $mod_alt+x exec  flameshot gui
 # start dmenu (a program launcher)
