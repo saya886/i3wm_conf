@@ -36,9 +36,9 @@ bindsym $mod+Return exec konsole
 # kill focused window
 bindsym $mod+Shift+q kill
 # take a full screenshot 
-bindsym $mod_alt+c exec flameshot full  -p ~/Pictures/screenshots
+bindsym $mod+c exec flameshot full  -p ~/Pictures/screenshots
 # exec flameshot gui
-bindsym $mod_alt+x exec  flameshot gui
+bindsym $mod+x exec  flameshot gui
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -47,54 +47,54 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod_alt+j focus left
+bindsym $mod_alt+k focus down
+bindsym $mod_alt+l focus up
+bindsym $mod_alt+semicolon focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod_alt+Left focus left
+bindsym $mod_alt+Down focus down
+bindsym $mod_alt+Up focus up
+bindsym $mod_alt+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod_alt+Shift+j move left
+bindsym $mod_alt+Shift+k move down
+bindsym $mod_alt+Shift+l move up
+bindsym $mod_alt+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod_alt+Shift+Left move left
+bindsym $mod_alt+Shift+Down move down
+bindsym $mod_alt+Shift+Up move up
+bindsym $mod_alt+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod_alt+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod_alt+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod_alt+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod_alt+z layout stacking
+bindsym $mod_alt+x layout tabbed
+bindsym $mod_alt+c layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod_alt+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod_alt+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod_alt+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+#bindsym $mod_alt+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -156,12 +156,12 @@ mode "resize" {
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        bindsym $mod_alt+s mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod_alt+s mode "resize"
 
-bindsym $mod_alt+z  exec rofi -show run
+bindsym $mod+z  exec rofi -show run
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -170,3 +170,5 @@ bar {
 
 default_border pixel 5
 default_floating_border normal
+
+client.focused #555555 #555555 #ffffff #2e9ef4     #e7e7e7
