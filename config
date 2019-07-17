@@ -146,7 +146,7 @@ mode "resize" {
         bindsym $mod_alt+s mode "default"
 }
 
-#bindsym $mod_alt+s mode "resize"
+bindsym $mod_alt+s mode "resize"
 
 
 #----- bar
