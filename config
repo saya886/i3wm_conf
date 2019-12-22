@@ -152,6 +152,7 @@ bindsym $mod_alt+s mode "resize"
 #----- bar
 
 
+
 #bar {   
 #        mode hide
 #        status_command i3status
@@ -161,22 +162,23 @@ bindsym $mod_alt+s mode "resize"
 #----- windows style configuration
 
 
-default_border pixel 5
+default_border pixel 25
 default_floating_border normal
 hide_edge_borders none
 
-for_window [class="yakuake"] floating enable;
-for_window [title="Desktop — Plasma"] floating enable;
-for_window [class="plasmashell"] floating enable;
-for_window [class="Plasma"] floating enable;
-for_window [title="plasma-desktop"] floating enable;
-for_window [title="win7"] floating enable;
-for_window [class="krunner"] move down 1px floating enable;
-for_window [class="Kmix"] floating enable;
-for_window [class="Klipper"] floating enable;
-for_window [class="Plasmoidviewer"] floating enable;
-for_window [class="(?i)*nextcloud*"] floating disable
-for_window [class="plasmashell" window_type="notification"] floating enable, move right 700px, move down 450px, no_focus
-#for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 25
+for_window [class="yakuake"] border pixel 5  floating enable;
+for_window [title="Desktop — Plasma"] border pixel 5  floating enable;
+for_window [class="plasmashell"] border pixel 5 floating enable;
+for_window [class="Plasma"] border pixel 5 floating enable;
+for_window [title="plasma-desktop"] border pixel 5 floating enable;
+for_window [title="win7"] border pixel 5  floating enable;
+for_window [class="krunner"] border pixel 5  move down 1px floating enable;
+for_window [class="Kmix"] border pixel 5  floating enable;
+for_window [class="Klipper"] border pixel 5  floating enable;
+for_window [class="Plasmoidviewer"] border pixel 5  floating enable;
+for_window [class="(?i)*nextcloud*"] border pixel 5  floating disable
+for_window [class="plasmashell" window_type="notification"] border pixel 5 floating enable, move right 700px, move down 450px, no_focus
 
-client.focused #555555 #555555 #ffffff #2e9ef4     #b30000
+
+client.focused #ffffff #ffffff #ffffff #909090     #000000
